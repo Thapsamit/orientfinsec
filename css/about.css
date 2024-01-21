@@ -1,0 +1,182 @@
+:root {
+  --main-color: rgba(137, 15, 13, 1);
+  --text-color: rgba(83, 92, 104, 1);
+  --extra-light-color: rgba(217, 217, 217, 1);
+  --box-shadow-prop: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --overlay: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+.loan {
+  width: 100%;
+  height: 600px;
+
+  position: relative;
+  box-shadow: var(--overlay);
+}
+.loan-text {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.about-us {
+  padding: 4rem 1rem;
+}
+.about-us .about-us-flex {
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.about-us .vision-mission {
+  flex: 1;
+  margin-right: 1.8rem;
+}
+.about-us .vision-mission h1 {
+  color: var(--main-color);
+  position: relative;
+}
+.about-us .vision-mission h1 .line {
+  position: absolute;
+  left: 0;
+  bottom: -20%;
+  width: 200px;
+  height: 5px;
+  border-radius: 50px;
+  background: var(--main-color);
+}
+.about-us .vision-mission p {
+  padding: 2rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.about-us .accordian {
+  flex: 1;
+}
+
+.about-us .accordian .accord-btn {
+  background: var(--main-color);
+  color: white;
+  font-size: 1.1rem;
+  padding: 16px 10px;
+  justify-content: space-between;
+
+  transition: 0.1s all linear;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+.about-us .accordian .accord-btn:hover {
+  background: rgba(137, 15, 13, 0.8);
+}
+.about-us .accordian .accord-btn i {
+  margin-right: 16px;
+}
+.panel {
+  padding: 20px 10px;
+  background: var(--extra-light-color);
+  display: none;
+}
+
+.company-details h1 {
+  color: var(--main-color);
+  position: relative;
+  margin-bottom: 30px;
+}
+.company-details h1 .line {
+  position: absolute;
+  left: 0;
+  bottom: -20%;
+  width: 200px;
+  height: 5px;
+  border-radius: 50px;
+  background: var(--main-color);
+}
+.company-details .company-details-table .company-details-flex {
+  justify-content: flex-start;
+  padding: 10px;
+  border-bottom:1px solid rgba(83, 92, 104, 0.1);
+}
+
+.company-details .company-details-table .company-details-flex h3 {
+  color: var(--main-color);
+  margin-right: 30px;
+  font-size: 1rem;
+}
+.company-details .company-details-table .company-details-flex p{
+  font-size: 0.9rem;
+  color:var(--text-color);
+
+}
+
+.company-details
+  .company-details-table
+  .company-details-flex:nth-of-type(2n + 1) {
+    background-color:rgba(217, 217, 217, 0.3);
+}
+
+
+/* counter*/
+.customers .customers-bg {
+  width: 100%;
+  height: 100%;
+  padding: 4rem 0;
+  background: url("/images/home/bg2.jpg");
+  box-shadow: inset 0 0 0 1000px rgba(137, 15, 13, 0.8);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.customers .customers-bg .customers-flex {
+  height: 100%;
+}
+.customers .customers-bg .customers-flex .customer-row {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+.customers .customers-bg .customers-flex .customer-row .customer-box {
+  background: white;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 1.5rem;
+  padding: 10px 0;
+  box-shadow: var(--box-shadow-prop);
+  transition: 0.5s all linear;
+}
+.customers .customers-bg .customers-flex .customer-row .customer-box:hover {
+  transform: translateY(-10%);
+}
+.customers .customers-bg .customers-flex .customer-row .customer-box h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--main-color);
+  margin: 10px 0;
+}
+.customers .customers-bg .customers-flex .customer-row .customer-box i {
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 10px 0;
+}
+.customers .customers-bg .customers-flex .customer-row .customer-box .counter {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.feature-container .feature-col1 {
+  background: url("../images/about/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: none;
+}
+@media (max-width: 700px) {
+  .customers .customers-bg .customers-flex .customer-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+@media (max-width: 1100px) {
+  .about-us .about-us-flex {
+    display: block;
+  }
+}

@@ -1,0 +1,82 @@
+.loader{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    top:0;
+    left:0;
+    background:rgba(137, 15, 13, 1);
+    z-index:1000;
+}
+.container
+{
+ display: flex;
+  height:100%;
+  align-items: center;
+  justify-content:center;
+}
+.container > div
+{
+  background-color: white;
+  width: 8px; 
+  height: 20px;
+  margin: 4px;
+  border-radius:60px;
+}
+.bar1
+{
+  animation-name: bar1;
+  animation-duration: 1s;
+  animation-delay:0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.bar2
+{
+  animation-name: bar1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.1s;
+}
+
+.bar3
+{
+  animation-name: bar1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.2s;
+}
+
+.bar4
+{
+  animation-name: bar1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.3s;
+}
+
+
+.bar5
+{
+  animation-name: bar1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.4s;
+}
+@keyframes bar1{
+  0%
+  {
+    height: 20px;
+  }
+  50%
+  {
+    height: 70px;
+  }
+  100%
+  {
+    height: 20px;
+  }
+}
